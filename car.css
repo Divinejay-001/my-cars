@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: #F8F7F4;
+
+}
+.top-wrapper{
+    height: 30vh;
+    display: flex;
+justify-content: space-evenly;
+    list-style: none;
+    margin-top: 20px;
+}
+.title{
+    font-family:'Lucida Sans', 'Comic Sans MS','Pacifico','cursive';
+    font-style: italic;
+    font-size: 25px;
+    /* margin-top: 30px; */
+}
+.links{
+    margin-top: 10px;
+  list-style: none;  
+    display: flex;
+    gap: 2rem;
+}
+a{
+text-decoration: none;
+color: black;
+}
+.toggle-btn{
+    cursor: pointer;
+    font-size: 20px;
+margin-top: 2px;
+    margin-left: 100px;
+    transition: all 0.3s ease;
+}
+.search-container {
+    top: 100%;
+    margin-right: 50px;
+    /* position: relative; */
+    /* display: inline-block; */
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    /* display: flex; */
+    /* text-align: center; */
+    /* display: inline; */
+    /* margin-left: 500px; */
+    /* margin-block: 20px; */
+    margin-bottom: 100px;
+  }
+  
+  .search-input {
+    padding-right: 40px; /* make space for the button */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 60px;
+    width: 100px; /* adjust width */
+     margin-left: 40px;
+    margin-bottom: 29px;
+
+  }
+ 
+  .search-button {
+    position: absolute;
+    top: 2%;
+    transform: translateY(-50%);
+    right: 330px;
+    margin-top: 28px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .action-btn{
+    display: flex;
+    background-color: #EEB1EC;
+    color: #fff;
+    padding: 5px 5px;
+    border:none ;
+    outline: none;
+     border-radius: 20px;
+     font-size: 0.9rem;
+     font-weight: bold;
+     cursor: pointer;
+     transition: scale 0.2 ease ;
+    margin: 0.5rem 0;
+  }
+  .action-btn:hover{
+     background-color: #F4EAB4;
+  }
+  .action-btn:active{
+     background-color: #0D0C22;
+  }
+ 
+  .dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    /* height: 0; */
+    width: 220px;
+    background:#DDD2E8;
+    backdrop-filter:  blur(50px);
+    border-radius:10px;
+    overflow:hidden ;
+    opacity: 0.6;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    flex-direction: column;
+padding: 0.3rem;
+  }
+  .dropdown_menu li{
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dropdown_menu .action-btn{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+}
+.dropdown_menu.active{
+    height: 240px;
+    display: block;
+    }
+    #car-results{
+      /* margin-top: -20vh; */
+      display: flex;
+      /* grid-template-columns: repeat(3, 1fr); */
+      gap: 10px;
+      background: transparent;
+      /* width: min(90%, 1200px); */
+      margin-inline: auto;
+  width: 1000vw;
+  ;
+  }
+  .car-container{
+      background-color: white;
+      width: 300px;
+      border-radius: 20px;
+      overflow: hidden;
+      max-height: 550px;
+  }
+  .car-image{
+      width: 100%;
+      height: 200px;
+  
+  }
+  .car-image img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .car-image img:hover{
+      transform: scale(1.05);
+      transition:.3s;
+  }
+  .car-container .bottom{
+      padding: 10px;
+background-color: #F4EAB4;
+  }
+  #no-result{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    display: flex;
+    
+  }
+  .motto{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 1000px;
+    font-family:cursive;
+    font-style: italic;
+    color: #0D0C22;
+  }
+  .afford{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family:cursive;
+    font-style: italic;
+    background-color: #EEB1EC;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 10px 10px;
+    color: #0D0C22;
+  }
+.afford:hover{
+  transform: scale(1.1);
+  transition: 4s ease;
+  cursor: pointer;
+}
+.sign-up{
+  display: none;
+  gap: 10px;
+  background-color: #EEB1EC;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  height: 300px;
+  border-radius: 25px;
+  
+}
+.form{
+margin-block: 50px;
+gap: 0px;
+}
+.email{
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 50px;
+  margin-block: 10px;
+}
+.password{
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 50px;
+  margin-block: 10px;
+}
+.submit{
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  color:rgb(0, 255, 225);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+  margin-block: 10px;
+}
+.submit::after{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:#FF00C8 ;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.submit::before{
+  content: "";
+  background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size:600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation:glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+@keyframes glowing{
+  0%{background-position: 0 0;}
+  50%{background-position: 400% 0;}
+ 100%{background-position: 0 0;}
+}
+.submit:hover::before{
+  opacity: 1;
+}
+.submit:active::after{
+  background: transparent;
+  color: #000;
+  font-weight: bold;
+}
+.sign-up.signUp{
+  height: 300px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  }
+  .google{
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    /* padding: 10px 30px; */
+    border-radius: 5px;
+    width: 22px;
+    height: 22px;
+    /* margin-top: 60px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
